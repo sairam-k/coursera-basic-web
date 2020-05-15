@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-<title>Welcome</title>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<title>Welcome</title>
 </head>
 
 <body>
@@ -17,16 +23,69 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 		crossorigin="anonymous"></script>
+
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 
-	
+	<header id="header-nav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="ml-auto container justify-content-start align-items-start">
+				<a class="navbar-brand d-none d-lg-block" href="#">
+					<div id="logo-image" class="" alt="Logo Image"></div>
+				</a>
+				<div class="nav-text flex-shrink-2">
+					<p class="h2">David Chu's China Bistro</p>
+					<p>
+						<img src="images/star-k-logo.png" alt="Kosher certification" />
+						<span id="kosher-cert-text">Kosher certified</span>
+					</p>
+				</div>
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navList"
+					aria-controls="navList">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
 
-	<h1>Hello from content</h1>
-	<p>This is a paragraph</p>
+			<div class="collapse navbar-collapse" id="navList">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="menu-categories.html">
+							<i class="fa fa-utensils"></i>
+							Menu
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu-categories.html">
+							<i class="fa fa-info-circle"></i>
+							About
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu-categories.html">
+							<i class="fa fa-certificate"></i>
+							Awards
+						</a>
+					</li>
+					<li class="nav-item d-none d-lg-block" id="phone">
+						<a class="nav-link" id="phone-link" href="tel:410-602-5008">
+							<span>410-602-5008</span></a>
+						<div>* We Deliver</div>
+						</a>
+					</li>
+				</ul>
+			</div> <!-- collapsable-nav -->
+		</nav> <!-- nav-bar -->
+	</header> <!-- nav-bar header-->
+
+	<div id="call-btn" class="d-block d-lg-none">
+		<a class="btn" href="tel:410-602-5008">
+			<span class="glyphicon glyphicon-earphone"></span>
+			410-602-5008
+		</a>
+	</div>
+	<div id="xs-deliver" class="text-center d-block d-lg-none">* We Deliver</div>
+
 </body>
-<footer>
-	This is a footer
-</footer>
 
 </html>
