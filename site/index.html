@@ -29,62 +29,129 @@
 	<script src="js/script.js"></script>
 
 	<header id="header-nav">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="ml-auto container justify-content-start align-items-start">
-				<a class="navbar-brand d-none d-lg-block" href="#">
-					<div id="logo-image" class="" alt="Logo Image"></div>
-				</a>
-				<div class="nav-text flex-shrink-2">
-					<p class="h2">David Chu's China Bistro</p>
-					<p>
-						<img src="images/star-k-logo.png" alt="Kosher certification" />
-						<span id="kosher-cert-text">Kosher certified</span>
-					</p>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container justify-content-start align-items-start">
+					<a class="navbar-brand d-none d-lg-block" href="#">
+						<div id="logo-image" class="" alt="Logo Image"></div>
+					</a>
+					<div class="nav-text flex-shrink-2">
+						<p class="h2">David Chu's China Bistro</p>
+						<p>
+							<img src="images/star-k-logo.png" alt="Kosher certification" />
+							<span id="kosher-cert-text">Kosher certified</span>
+						</p>
+					</div>
+					<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navList"
+						aria-controls="navList">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 				</div>
-				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navList"
-					aria-controls="navList">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</div>
 
-			<div class="collapse navbar-collapse" id="navList">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="menu-categories.html">
-							<i class="fa fa-utensils"></i>
-							Menu
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="menu-categories.html">
-							<i class="fa fa-info-circle"></i>
-							About
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="menu-categories.html">
-							<i class="fa fa-certificate"></i>
-							Awards
-						</a>
-					</li>
-					<li class="nav-item d-none d-lg-block" id="phone">
-						<a class="nav-link" id="phone-link" href="tel:410-602-5008">
-							<span>410-602-5008</span></a>
-						<div>* We Deliver</div>
-						</a>
-					</li>
-				</ul>
-			</div> <!-- collapsable-nav -->
-		</nav> <!-- nav-bar -->
+				<div class="collapse navbar-collapse" id="navList">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="menu-categories.html">
+								<i class="fa fa-utensils"></i>
+								Menu
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu-categories.html">
+								<i class="fa fa-info-circle"></i>
+								About
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu-categories.html">
+								<i class="fa fa-certificate"></i>
+								Awards
+							</a>
+						</li>
+						<li class="nav-item d-none d-lg-block" id="phone">
+							<a class="nav-link" id="phone-link" href="tel:410-602-5008">
+								<span>410-602-5008</span></a>
+							<div>* We Deliver</div>
+							</a>
+						</li>
+					</ul>
+				</div> <!-- collapsable-nav -->
+			</nav> <!-- nav-bar -->
+		</div><!-- container -->
 	</header> <!-- nav-bar header-->
 
-	<div id="call-btn" class="d-block d-lg-none">
+	<div id="call-btn" class="d-block d-lg-none container">
 		<a class="btn" href="tel:410-602-5008">
-			<span class="glyphicon glyphicon-earphone"></span>
+			<i class="fa fa-phone" aria-hidden="true"></i>
 			410-602-5008
 		</a>
 	</div>
-	<div id="xs-deliver" class="text-center d-block d-lg-none">* We Deliver</div>
+
+	<div id="xs-deliver" class="text-center d-block d-lg-none container">* We Deliver</div>
+
+	<div id="main-content" class="container">
+		<div class="jumbotron">
+			<img src="images/jumbotron_768.jpg" alt="Restaraunt Image" class="img-fluid d-block d-md-none">
+		</div>
+	</div>
+
+	<div id="home-tiles" class="container">
+		<div class="row">
+			<div class="col-md">
+				<a href="menu-categories.html">
+					<div id="menu-tile">
+						<span>menu</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md">
+				<a href="single-category.html">
+					<div id="specials-tile">
+						<span>specials</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg">
+				<a href="https://goo.gl/maps/JxRBennt38KV1vuf9" target="_blank">
+					<div id="map-tile">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4416367054105!2d77.23793171464457!3d28.64649228241225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd2076d5d8a7%3A0xfc425590701a73a6!2sMoti%20Mahal%20Restaurant!5e0!3m2!1sen!2sin!4v1589550866260!5m2!1sen!2sin"
+							width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0">
+						</iframe>
+						<span>map</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div> <!-- Home-tiles end -->
+
+	<footer id="home-footer">
+		<div class="container">
+			<div class="row">
+				<section id = "timings" class="col-sm">
+					<span>Hours:</span><br>
+					Sun-Thurs: 11:15am - 10:00pm<br>
+					Fri: 11:15am - 2:30pm<br>
+					Saturday Closed
+					<hr class="d-sm-none">
+				</section>
+				<section id = "address" class="col-sm">
+					<span>Address:</span><br>
+					7105 Reisterstown Road<br>
+					Baltimore, MD 21215
+					<p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+					<hr class="d-sm-none">
+				</section>
+				<section  id = "testimonials" class="col-sm">
+					<p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+					<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+					<hr class="d-sm-none">
+				</section>
+			</div>
+			<div class="text-center col-lg">&copy; Copyright David Chu's China Bistro 2016</div>
+		</div>
+	</footer>
 
 </body>
 
